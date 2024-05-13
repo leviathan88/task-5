@@ -50,11 +50,12 @@ let longest = (arr) => {
 }
 
 // function 5 ----------------------------------
-let sum = (num) => {
+const sum = (num) => {
+  let str = num.toString()
   let result = 0
-
-  for (let i = 0; i < num; i++) {
-    result += i
+  
+  for (let i = 0; i < str.length; i++) {
+    result += Number(str[i])
   }
 
   console.log(result);
@@ -64,4 +65,4 @@ average([8, 19, 6])
 reverse('lorem')
 factorial(6)
 longest(['name', 'horizon' ,'lorem'])
-sum(6)
+sum(5869)
